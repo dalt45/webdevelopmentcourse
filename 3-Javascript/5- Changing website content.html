@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+
+</head>
+
+    <body>
+    	<p id="text">Hello World!</p>
+    	<button id="mybutton">Change text</button>
+    	<p id="secondparagraph">Javascript is...</p>
+    	<button id="mybutton2">Change text 2</button>
+
+    	<p id="empity"></p>
+    	<button id="button3">Magic</button>
+ <!-- dsd
+ 		 -->
+		<script type="text/javascript">
+		
+		document.getElementById("mybutton").onclick = function() {
+
+			document.getElementById("text").innerHTML ="Hi";
+		}
+		document.getElementById("mybutton2").onclick = function() {
+
+			document.getElementById("secondparagraph").innerHTML = "I think " + document.getElementById("secondparagraph").innerHTML + "awesome!";
+		}
+		document.getElementById("button3").onclick = function() {
+
+			document.getElementById("empity").innerHTML = "I think " + document.getElementById("secondparagraph").innerHTML + "<h1>awesome!</h1>";
+		}
+			//This is a line comment
+
+			/*
+			This a 
+			multiline comment
+
+			
+			document.getElementById("text").innerHTML = "Hello Rob!";
+			*/			
+		</script>
+	</body>
+	
+</html>

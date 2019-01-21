@@ -1,0 +1,78 @@
+<html>
+
+    <head>
+    	<title>Jquery</title>
+    	<script type="text/javascript" src="jquery.min.js"></script>
+        <script src="jquery-ui/jquery-ui.js"></script>
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    	<style type="text/css">
+            #draggable { width: 150px; height: 150px; padding: 0.5em; }
+            
+            #contenedor{
+                width: 700px;
+                height: 300px;
+                border:2px solid;
+            }
+
+            #resizable{
+                width: 150px;
+                height:150px;
+                padding: 0.5em;
+                background-color:red;
+
+            }
+            #also{
+                width: 150px;
+                height:150px;
+                background-color:red;
+
+            }
+
+    		
+    	</style>
+        
+     
+  
+    </head>
+
+    <body>
+        <div id="contenedor">
+           <div id="draggable" class="ui-widget-content">
+                 <p>Drag me around</p>
+            </div>
+        </div>
+
+        <div id="resizable">
+            
+        </div>
+        <div id="also">
+                    
+                </div>
+
+    	<script type="text/javascript">
+            $( function() {
+                $( "#draggable" ).draggable({containment: "#contenedor"});
+            } );
+         $( function() {
+             $( "#resizable" ).resizable({
+                grid:50,
+                alsoResize:"#also",
+                 resize: function( event, ui ) {
+                  if($("#resizable").width() > 300){
+                alert("big enough!")
+             }
+                }
+                   
+             });
+
+             $("#also").resizable();
+         } );
+    	
+    	 </script>
+
+
+        
+
+    </body>
+
+</html>

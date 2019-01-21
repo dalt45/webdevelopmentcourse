@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+    	<title>Jquery</title>
+    	<script type="text/javascript" src="jquery.min.js"></script>
+    	<style type="text/css">
+
+        #hidden-text{
+            display: none;
+        }
+    	
+
+    	</style>
+     
+  
+    </head>
+
+    <body>
+    	<p id="fade-out-text">Hi there!</p>
+        <button id=toggleButton>Fadeout Button</button>
+
+
+    	<script type="text/javascript">
+            $("#toggleButton").click(function(){
+
+                if($("#fade-out-text").css("display") == "none") {
+                    $("#fade-out-text").fadeIn();
+                } else{
+
+                  $("#fade-out-text").fadeOut();
+              
+                }
+
+                
+            });
+
+
+    	
+    	 </script>
+
+
+        
+
+    </body>
+
+</html>

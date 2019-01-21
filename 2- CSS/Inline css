@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<title>Mi primer pa&#769;gina web</title>
+	<style type="text/css">
+		p {
+		color:red
+		
+		}
+	
+	
+	</style>
+</head>
+    <body style="background-color:azure;">
+	<h1>CCS is cool</h1>
+	<p>Hola, soy daniel.</p>
+    </body>
+			
+</html>

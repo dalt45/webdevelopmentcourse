@@ -1,0 +1,54 @@
+<html>
+
+    <head>
+    	<title>Jquery</title>
+    	<script type="text/javascript" src="jquery.min.js"></script>
+    	<style type="text/css">
+    		#green-circle{
+    			border-radius: 50%;
+    			background-color: green;
+    			width: 200px;
+    			height: 200px;
+    			float: left;
+    			margin: 10px;
+    		}
+
+
+			.square{
+    			background-color: red;
+    			width: 200px;
+    			height: 200px;
+    			float: left;
+    			margin: 10px;
+
+    		}
+
+    	</style>
+     
+  
+    </head>
+
+    <body>
+    	<p>Hi there!</p>
+
+    	<div id="green-circle"></div>
+    	<div class="square"></div>
+    	<div class="square"></div>
+
+
+    	<script type="text/javascript">
+
+    		$("div").click(function(){
+    			$(this).css("display","none");
+    		});
+    
+    	
+    	
+    	 </script>
+
+
+        
+
+    </body>
+
+</html>

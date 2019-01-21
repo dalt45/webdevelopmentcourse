@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+    	<title>Jquery</title>
+    	<script type="text/javascript" src="jquery.min.js"></script>
+    	<style type="text/css">
+    		#green-circle{
+    			border-radius: 50%;
+    			background-color: green;
+    			width: 200px;
+    			height: 200px;
+    			float: left;
+    			margin: 10px;
+    		}
+
+    		#first-web{
+    			width: 300px;
+    			height: 300px;
+
+
+    		}
+
+    	</style>
+     
+  
+    </head>
+
+    <body>
+    	<p>Hi there!</p>
+
+    	<div id="green-circle"></div>
+
+    	<iframe id="first-web" src="https://www.wikipedia.org"></iframe>
+
+    	<script type="text/javascript">
+    		$("#green-circle").hover(function(){
+    		$("iframe").attr("src","https://www.ecowebhosting.co.uk")
+
+    		});
+    	
+    	 </script>
+
+
+        
+
+    </body>
+
+</html>

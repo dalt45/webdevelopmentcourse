@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>asdsd
+	<title>Javascript</title>
+
+</head>
+
+    <body>
+
+    <input id="a1" type="text">
+    <button id="button1">Change text</button>
+    <p id="print">This is some text</p>
+
+		<script type="text/javascript">
+			document.getElementById("button1").onclick = function() {
+				var textEntered = "";
+				textEntered = document.getElementById("a1").value;
+				document.getElementById("print").innerHTML = document.getElementById("print").innerHTML + textEntered;
+			}
+
+		</script>
+	
+	</body>
+	
+</html>

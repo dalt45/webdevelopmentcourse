@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+
+</head>
+
+    <body>
+    	<p>Ingrese palabra mágica</p>
+    	<p><input type="text" id="magic"></p>
+    	<p><button id="button1">Click para validar</button></p>
+
+   
+		<script type="text/javascript">
+			
+		document.getElementById("button1").onclick = function () {
+			
+			var magicWordEntered = document.getElementById("magic").value;
+
+			var magicWord = "hola";
+
+			if (magicWordEntered == magicWord) {
+				alert("You got it");
+			} else {
+				alert("Nope, try again");
+			}
+
+		}
+
+
+		</script>
+	
+	</body>
+	
+</html>

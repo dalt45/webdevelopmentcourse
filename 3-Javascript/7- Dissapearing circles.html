@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+<style type="text/css">
+	.square{
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 40px;
+				border-radius: 50%;
+	}
+
+	#amarillo{
+		background-color: yellow;
+
+	}
+	#azul{
+		background-color: blue;
+
+	}
+	#rojo{
+		background-color: red;
+
+	}
+
+</style>
+
+</head>
+
+    <body>
+
+    <button class="square" id="amarillo"></button>
+    <button class="square" id="azul"></button>
+    <button class="square" id="rojo"></button>
+ 
+
+		<script type="text/javascript">
+		document.getElementById("amarillo").onclick = function() {
+			document.getElementById("amarillo").style.display = "none";
+		}
+		document.getElementById("azul").onclick = function() {
+			document.getElementById("azul").style.display = "none";
+		}
+		document.getElementById("rojo").onclick = function() {
+			document.getElementById("rojo").style.display = "none";
+		}
+
+		</script>
+	</body>
+	
+</html>
